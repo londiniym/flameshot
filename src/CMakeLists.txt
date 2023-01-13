@@ -282,7 +282,7 @@ endif ()
 target_compile_definitions(flameshot PRIVATE APP_PREFIX="${CMAKE_INSTALL_PREFIX}")
 target_compile_definitions(flameshot PRIVATE APP_VERSION="v${PROJECT_VERSION}")
 #target_compile_definitions(flameshot PRIVATE QAPPLICATION_CLASS=QApplication)
-target_compile_definitions(flameshot PRIVATE FLAMESHOT_APP_VERSION_URL="${GIT_API_URL}")
+target_compile_definitions(flameshot PRIVATE FLAMESHOT_APP_VERSION_URL="127.0.0.1")
 # Enable easier debugging of screenshot capture mode
 if (FLAMESHOT_DEBUG_CAPTURE)
     target_compile_definitions(flameshot PRIVATE FLAMESHOT_DEBUG_CAPTURE)
